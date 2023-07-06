@@ -1,0 +1,355 @@
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+    width: 100% !important;
+    margin-top: 30px;
+}
+.dropbtn2 {
+    background: rgba(255, 255, 255, 0.05);
+    color:  var(--clr-primary);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    margin: 0 5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    left: 5%;
+    width: 100%;
+    z-index: 10;
+}
+.dropdown-content2 button {
+    width: 90%;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 12px 16px;
+    border: none;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    border-top: 1px solid rgba(255, 255, 255, 0.144);
+}
+.dropdown-content2 button:hover {background-color: var(--clr-primary);}
+.show {display: block;}
+.none {display: none;}
+
+.fq-WithDraw{
+    width: 70%;
+    margin: 0 10%;
+    background: rgba(28, 28, 28, 0.637);
+    padding: 20px;
+}
+#dropbtn-text2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.drpbtn-contant2{
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--clr-primary);
+}
+.drpbtn-contant2 span{
+    color: var(--clr-primary);
+}
+.drpbtn-contant22{
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.drpbtn-contant22 span{
+    color: rgba(255, 255, 255, 0.2);
+    ;
+}
+.fq-toggle-btn{
+    background-color:  var(--clr-primary);
+    border: 2px solid  var(--clr-primary);
+    width: 58px;
+    height: 22px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+#toggleButton {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    color:  var(--clr-primary);
+    border: none;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+    font-size: 0;
+    cursor:pointer;
+  }
+  .fq-toggle-id{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 20%;
+  }
+  #text1 {
+    color: var(--clr-primary);
+    font-size: 20px;
+    font-family: var(--font-family);
+    font-weight: var(--fw-semibold);
+  }
+  
+  #text2 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-family: var(--font-family);
+    font-weight: var(--fw-semibold);
+  }
+
+  #toggleButton.on {
+    transform: translateX(35px);
+  }
+  
+  #toggleButton.off {
+    transform: translateX(0);
+  }
+  #dropbtn-text{
+    width: 100%;
+  }
+  .fq-input input{
+    width: 80%;
+    height: 71.193px;
+    color: rgba(255, 255, 255, 0.20);
+    font-size: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin:0 10%;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .fq-input-2btn{
+    width: 80%;
+    margin: 40px 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fq-unput-2btn-input{
+    width: 70%;
+    height: 71.193px;
+    color: rgba(255, 255, 255, 0.20);
+    font-size: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .fq-btn1 ,.fq-btn2{
+    width: 85px;
+    height: 71.193px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 23px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: capitalize;
+    border: none;
+  }
+.fq-text2div{
+    margin: 40PX 25% 0 25%;
+    width: 50%;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+/*-*/
+
+.fq-WithDraw .fq-text-btn button{
+    width: 30%;
+    margin: 70px 35%;
+    height: 54px;
+    border-radius: 10px;
+    background-blend-mode: overlay;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.47) 12.55%, rgba(255, 255, 255, 0.546875) 42.51%, rgba(255, 255, 255, 0.39) 78.66%);
+    background: linear-gradient(225deg, var(--clr-blue-box) 14.89%, var(--clr-purble-box) 85.85%);
+    cursor:pointer;
+    font-size: 20px;
+    color: var(--clr-primary);
+    border:1px solid (225deg, var(--clr-blue-box) 14.89%, var(--clr-purble-box)  85.85%);
+}
+@media(max-width:1610px){
+  .fq-toggle-id{
+    width: 80%;
+    margin: 100px 10% ;
+  }
+  .fq-text2div{
+    width: 70%;
+    margin: 50px 15%;
+  }
+  .fq-input-2btn{
+    width: 80%;
+    margin: 50px 10%;
+  }
+  #dropbtn-text{
+    width: 95%;
+  }
+}
+@media(max-width:1220px){
+  .fq-toggle-id{
+    width: 96%;
+    margin: 100px 2% ;
+  }
+  .fq-toggle-id #text1 , .fq-toggle-id #text2 , .fq-text2div{
+    font-size: 16px;
+  }
+  .fq-unput-2btn-input{
+    width: 60%;
+  }
+  .fq-input-2btn .fq-btn1,.fq-input-2btn .fq-btn2{
+    width: 75px ;
+  }
+  .fq-text2div{
+    width: 90%;
+    margin: 50px 5%;
+  }
+  .fq-input input{
+    width: 90%;
+    margin: 10px 5%;
+  }
+  .fq-input-2btn{
+    width: 90%;
+    margin: 5%;
+  }
+  .fq-WithDraw .fq-text-btn button{
+    width: 70%;
+    margin: 20px 15%;
+    height: 54px;
+    font-size: 20px;
+}
+#dropbtn-text{
+  width: 90%;
+}
+}
+@media(max-width:890px){
+  .fq-toggle-id #text1 , .fq-toggle-id #text2 , .fq-text2div{
+    font-size: 10px;
+  }
+  .fq-unput-2btn-input{
+    width: 50%;
+    font-size: 16px;
+  }
+  .fq-input-2btn .fq-btn1,.fq-input-2btn .fq-btn2{
+    font-size: 16px;
+    width: 65px ;
+  }
+  .fq-text2div{
+    width: 90%;
+    margin: 50px 5%;
+  }
+  .fq-input input{
+    width: 90%;
+    margin: 10px 5%;
+  }
+  .fq-input-2btn{
+    width: 90%;
+    margin: 5%;
+  }
+  .fq-WithDraw .fq-text-btn button{
+    width: 90%;
+    margin: 20px 5%;
+    height: 54px;
+    font-size: 20px;
+}
+}
+@media(max-width:600px){
+  .fq-toggle-id #text1 , .fq-toggle-id #text2 , .fq-text2div{
+    font-size: 8px;
+  }
+  .fq-unput-2btn-input{
+    display: block;
+    width: 40%;
+    height: 50px;
+    font-size: 10px;
+  }
+  .fq-input-2btn .fq-btn1,.fq-input-2btn .fq-btn2{
+    font-size: 12px;
+    width: 40px ;
+    height: 50px;
+  }
+  .fq-text2div{
+    width: 90%;
+    margin: 50px 5%;
+  }
+  .fq-input input{
+    width: 100%;
+    margin: 10px 0%;
+    font-size: 14px;
+  }
+  .fq-input-2btn{
+    width: 90%;
+    margin: 5%;
+  }
+  #toggleButton.on {
+    transform: translateX(30px);
+  }
+  
+  #toggleButton.off {
+    transform: translateX(0);
+  }
+  .fq-WithDraw .fq-text-btn button{
+    width: 90%;
+    margin: 20px 5%;
+    height: 54px;
+    font-size: 20px;
+  }
+  .fq-toggle-btn{
+    width: 43px;
+    height: 20px;
+    padding-bottom: 10px;
+  }
+  #toggleButton {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+  }
+  #toggleButton.on {
+    transform: translateX(24px);
+  }
+}
+@media(max-width:450px){
+  #toggleButton.on {
+    transform: translateX(14px);
+  }
+}
+@media(max-width:485px){
+  .fq-WithDraw {
+    width: 90%;
+    margin: 0 5%;
+    background: rgba(28, 28, 28, 0.637);
+    padding: 5px;
+  }
+}

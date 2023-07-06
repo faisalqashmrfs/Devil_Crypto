@@ -1,0 +1,209 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100% !important;
+    margin-top: 30px;
+}
+.dropbtn {
+    background: rgba(255, 255, 255, 0.05);
+    color:  var(--clr-primary);
+    font-family: var(--font-family);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    margin: 0 5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 5%;
+    width: 100%;
+    z-index: 10;
+    
+}
+.dropdown-content button {
+    width: 90%;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 12px 16px;
+    border: none;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    border-top: 1px solid rgba(255, 255, 255, 0.144);
+    z-index: 10 !important;
+}
+.dropdown-content button:hover {background-color: var(--clr-primary);}
+.show {display: block;}
+.none {display: none;}
+
+.fq-Deposits{
+    width: 70%;
+    margin: 0 10%;
+    background: rgba(28, 28, 28, 0.637);
+    padding: 20px;
+}
+#dropbtn-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.drpbtn-contant{
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.drpbtn-contant2{
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.drpbtn-contant2 span{
+    color: rgba(255, 255, 255, 0.2);
+    ;
+}
+#qrcode{
+    width: 16% ;
+    margin: 50PX 42%;
+    z-index: -10 !important;
+}
+.fq-inpot-coby{
+    width: 80%;
+    margin: 50px 10%;
+    position: relative;
+}
+.fq-inpot-coby input{
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    font-family: var(--font-family);
+    font-size: 25px;
+    color: var(--clr-primary);
+}
+.fq-inpot-coby button{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+.fq-Deposits .fq-text-dec{
+    color: rgba(137, 140, 169, 1);
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    height:24px;
+}
+.fq-Deposits .fq-text-btn button{
+    width: 30%;
+    margin: 100px 35%;
+    height: 54px;
+    border-radius: 10px;
+    background-blend-mode: overlay;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.47) 12.55%, rgba(255, 255, 255, 0.546875) 42.51%, rgba(255, 255, 255, 0.39) 78.66%);
+    background: linear-gradient(225deg, var(--clr-blue-box) 14.89%, var(--clr-purble-box) 85.85%);
+    cursor:pointer;
+    font-size: 20px;
+    color: var(--clr-primary);
+    border:1px solid (225deg, var(--clr-blue-box) 14.89%, var(--clr-purble-box) 85.85%);
+}
+@media(max-width:1370px){
+    .fq-inpot-coby input{
+        font-size: 18px;
+    }
+    .fq-Deposits .fq-text-btn button{
+        width: 60%;
+        margin: 100px 20%;
+    }
+    .fq-Deposits .fq-text-dec{
+        font-size: 16px;
+    }
+    .fq-inpot-coby button img{
+        width: 18px;
+    }
+    #qrcode{
+        width: 26% ;
+        margin: 50PX 33%;
+    }
+    .dropbtn {
+        font-size: 14px;
+        width:100%;
+        margin: 0 ;
+    }
+}
+@media(max-width:862px){
+    .fq-inpot-coby{
+        width: 90%;
+        margin: 40px 5%;
+        font-size: 16px;
+    }
+    .fq-inpot-coby input{
+        font-size: 16px;
+    }
+    .fq-Deposits .fq-text-btn button{
+        width: 70%;
+        margin: 120px 15%;
+    }
+    .fq-Deposits .fq-text-dec{
+        font-size: 12px;
+    }
+    .fq-inpot-coby button img{
+        width: 18px;
+    }
+    #qrcode{
+        width: 42% ;
+        margin: 50PX 29%;
+    }
+    .dropbtn {
+        font-size: 14px;
+        width:100%;
+        margin: 0 ;
+    }
+    #dropbtn-text{
+        width: 90%;
+    }
+}
+@media(max-width:650px){
+    .fq-inpot-coby{
+        margin: 40px 0;
+    }
+    .fq-inpot-coby input{
+        width: 100% ;
+        font-size: 11px;
+    }
+    .fq-Deposits .fq-text-btn button{
+        width: 90%;
+        margin: 100px 5% 30px 5%;
+        font-size: 16px;
+    }
+    .fq-Deposits .fq-text-dec{
+        font-size: 11px;
+    }
+    .fq-inpot-coby button img{
+        width: 14px;
+    }
+    #qrcode{
+        width: 70% ;
+        margin: 50PX 15%;
+    }
+    .drpbtn-contant{
+        display: none;
+    }
+}
+@media(max-width:480px){
+    #qrcode{
+        width: 16% ;
+        margin: 50PX 0%;
+        z-index: -10 !important;
+    }
+}

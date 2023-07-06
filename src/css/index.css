@@ -1,0 +1,950 @@
+/* Start nav */
+.bh-nav {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
+    height: 80px;
+}
+.nav-bg-color {
+    background: black;
+    transition: all 1s;
+}
+.bh-nav .nav-container {
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+.bh-nav .links-nav {
+    margin: 0 auto;
+}
+.bh-nav .links-nav.active {
+    transform: translateX(0);
+}
+.bh-nav .links-list {
+    display: flex;
+}
+.bh-nav .links-list .list-item {
+    margin-left: 20px;
+}
+.bh-nav .links-list .list-item > a {
+    color: var(--clr-primary);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: var(--fw-semibold);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.bh-nav .links-list .list-item > a:hover ,
+.bh-nav .links-list .list-item > a.active {
+    color: var(--clr-link);
+}
+.bh-nav .nav-buttons {
+    position: absolute;
+    right: 3%;
+}
+.bh-nav .nav-buttons button > a {
+    color: var(--clr-primary);
+    font-family: var(--font-family);
+    text-decoration: none;
+}
+.bh-nav .nav-buttons .signin-btn,
+.bh-nav .nav-buttons .signup-btn {
+    width: 96px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bh-nav .nav-buttons .signin-btn {
+    background: transparent;
+    border: 1px solid var(--clr-primary);
+}
+.bh-nav .nav-buttons .signup-btn {
+    margin-left: 5px;
+    background: linear-gradient(to top right, rgba(147, 63, 254, 1) 0%, rgba(24, 200, 255, 1) 100%);
+    border: 1px solid transparent;
+}
+.bh-nav .toggle-menue {
+    width: 40px;
+    border: none;
+    background: none;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+.bh-nav .toggle-menue span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--clr-primary);
+    margin-bottom: 6px;
+
+}
+@media (max-width: 1023px) {
+    .bh-nav .nav-container {
+        justify-content: space-between;
+    }
+    .bh-nav .toggle-menue {
+        display: block;
+    }
+    .bh-nav .links-nav {
+        width: 35%;
+        height: 100vh;
+        background-color: rgba(26, 27, 35, 0.2);
+        backdrop-filter: blur(7px);
+        margin: 0;
+        position: fixed;
+        left: 0;
+        transform: translateX(-100%);
+        top: 0;
+        border-radius: 0 20px 20px 0;
+        transition: 0.4s;
+    }
+    .bh-nav .links-list {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .bh-nav .links-list .list-item {
+       padding: 30px;
+       border-bottom: 1px solid #ffffff14;
+    }
+}
+/* End nav */
+
+/* Start get-started-section */
+.bh-get-started {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 200px;
+    background-image: url(/imgs/block1-bg-img.png);
+    background-position: inherit;
+    background-size: cover;
+    position: relative;
+}
+.bh-get-started .get-started-bg {
+    position: absolute;
+    right: 13%;
+    top: 16%;
+}
+.bh-get-started .get-started-para {
+    color: var(--clr-primary);
+    font-family: var(--font-family);
+    font-weight: var(--fw-black);
+    font-size: 85px;
+    text-align: center;
+    line-height: 110.5px;
+    padding-top: 150px;
+}
+.bh-get-started .get-started-btn,
+.bh-crypto-mining .get-started-btn,
+.bh-first-step .first-step-btn {
+    text-transform: capitalize;
+    width: 156px;
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: linear-gradient(to top right, var(--clr-purble-box) 0%, var(--clr-blue-box) 100%);
+    display: block;
+    font-family: var(--font-family);
+    font-weight: var(--fw-semibold);
+    color: var(--clr-primary);
+    cursor: pointer;
+}
+.bh-get-started .get-started-btn,
+.bh-crypto-mining .get-started-btn {
+    margin: 0 auto;
+}
+.bh-get-started .get-started-btn {
+    margin-top: 40px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .bh-get-started {
+        padding-bottom: 130px;
+    }
+    .bh-get-started .get-started-para {
+        line-height: 70px;
+        font-size: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .bh-get-started {
+        background-position: right;
+    }
+    .bh-get-started .get-started-para {
+        line-height: 40px;
+        font-size: 25px;
+    }
+    .bh-get-started .get-started-btn,
+    .bh-crypto-mining .get-started-btn {
+        width: 96px;
+        height: 40px;
+    }
+    .bh-get-started {
+        padding-bottom: 80px;
+    }
+    .bh-get-started .get-started-bg {
+        display: none;
+    }
+}
+/* End get-started-section */
+
+/* Start create-crypto-section */
+.bh-create-crypto {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+    position: relative;
+    background-image: url(/imgs/create-crypto-circles.png);
+}
+.bh-create-crypto .create-card {
+    width: 30%;
+    background: #1A1B23;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 23px;
+    border-radius: 25px;
+}
+.bh-create-crypto .create-card:nth-child(2) {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.bh-create-crypto .create-card .img-card {
+    width: 80px;
+    height: 80px;
+}
+.bh-create-crypto .create-card .card-title {
+    color: var(--clr-primary);
+    line-height: 41.6px;
+    font-family: var(--font-family);
+    font-weight: var(--fw-extrabold);
+    margin-top: 10px;
+}
+.bh-create-crypto .create-card .card-para {
+    color: var(--clr-text);
+    text-align: center;
+    max-width: 300px;
+    font-family: var(--font-family);
+    font-weight: var(--fw-base);
+    line-height: 24px;
+}
+.bh-create-crypto .create-card .card-link,
+.bh-buy-sell .buy-sell-link {
+    display: flex;
+    align-items: center;
+    color: var(--clr-link);
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: var(--fw-semibold);
+    margin-top: 30px;
+}
+.bh-create-crypto .create-card .card-link .card-link-span {
+    text-transform: uppercase;
+    margin-left: 3px;
+}
+.bh-create-crypto .create-card .card-link .arrow-img,
+.bh-buy-sell .buy-sell-link .arrow-img {
+    margin-left: 10px;
+}
+.bh-create-crypto .create-small-bg {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+}
+.bh-create-crypto .create-big-bg {
+    position: absolute;
+    bottom: -40px;
+    left: 1%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+    .bh-create-crypto .create-card .img-card {
+        width: 50px;
+        height: 50px;
+    }
+    .bh-create-crypto .create-card .card-title {
+        font-size: 20px;
+    }
+    .bh-create-crypto .create-card .card-para {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .bh-create-crypto {
+        padding-bottom: 80px;
+        background-image: none;
+    }
+    .bh-create-crypto .create-card {
+        width: 90%;
+        margin-bottom: 20px;
+   }
+   .bh-create-crypto {
+    flex-direction: column;
+    align-items: center;
+   }
+   .bh-create-crypto .create-card .card-title {
+    font-size: 20px;
+  }
+  .bh-create-crypto .create-big-bg {
+    bottom: 0;
+    left: 3%;
+}
+}
+/* End create-crypto-section */
+
+/* Start crypto-mining section */
+.bh-crypto-mining {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 160px;
+}
+.bh-crypto-mining .crypto-mining-title,
+.bh-service-customer .right-box-service .service-customer-title,
+.bh-buy-sell .buy-sell-title,
+.receive-trans .receive-trans-title {
+    color: var(--clr-primary);
+    font-family: var(--font-family);
+    font-weight: var(--fw-black);
+    font-size: 50px;
+    line-height: 65px;
+}
+.bh-crypto-mining .crypto-mining-title,
+.bh-crypto-mining .crypto-mining-para,
+.bh-buy-sell .buy-sell-title,
+.bh-buy-sell .buy-sell-para {
+    text-align: center;
+}
+.bh-crypto-mining .crypto-mining-para,
+.bh-service-customer .right-box-service .service-customer-para,
+.bh-buy-sell .buy-sell-para,
+.bh-first-step .left-box-para,
+.receive-trans .receive-trans-para {
+    color: var(--clr-text);
+    font-family: var(--font-family);
+    font-weight: var(--fw-base);
+    line-height: 24px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .bh-crypto-mining {
+        padding-bottom: 120px;
+    }
+    .bh-crypto-mining .crypto-mining-title,
+    .bh-buy-sell .buy-sell-title {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .bh-crypto-mining .crypto-mining-para,
+    .bh-buy-sell .buy-sell-para {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .bh-crypto-mining {
+        padding-bottom: 120px;
+    }
+    .bh-crypto-mining .crypto-mining-title,
+    .bh-buy-sell .buy-sell-title {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .bh-crypto-mining .crypto-mining-para,
+    .bh-buy-sell .buy-sell-para {
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+/* End crypto-mining section */
+
+/* Start background between crypto-mining section and service-customer section */
+.service-customer-bg {
+    background-image: url(/imgs/right-bg.png); 
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: 24%;
+}
+.service-customer-bg .star-above-serv-bg {
+    position: absolute;
+    right: 31%;
+    bottom: 42%;
+}
+.orange-gradient-bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    left: -20%;
+    height: 900px;
+    height: 1000px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .service-customer-bg {
+        width: 400px;
+    }
+}
+@media (max-width: 1023px) {
+    .service-customer-bg .star-above-serv-bg {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .service-customer-bg {
+        width: 300px;
+        opacity: 50%;
+    }
+    .orange-gradient-bg {
+        display: none;
+    }
+}
+/* End background between crypto-mining section and service-customer section */
+
+/* Start service-customer section */
+.bh-service-customer {
+    display: flex;
+    align-items: center;
+   padding-bottom: 160px;
+}
+.bh-service-customer .left-box-service ,
+.bh-service-customer .right-box-service {
+    width: 50%;
+}
+.bh-service-customer .right-box-service {
+    margin-left: auto;
+}
+.bh-service-customer .left-box-service {
+    width: 580px;
+    height: 420px;
+    background-image: url(/imgs/service-customer-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+          
+.bh-service-customer .right-box-service .service-customer-btn {
+    text-transform: capitalize;
+    width: 156px;
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid var(--clr-primary);
+    background: transparent;
+    display: block;
+    font-family: var(--font-family);
+    font-weight: var(--fw-semibold);
+    color: var(--clr-primary);
+    cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .bh-service-customer {
+        padding-bottom: 120px;
+    }
+    .bh-service-customer .right-box-service .service-customer-title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .bh-service-customer .left-box-service {
+        width: 400px;
+        height: 320px;
+    }
+}
+@media (min-width: 861px) and (max-width: 1085px) {
+    .bh-service-customer .right-box-service .service-customer-para {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+ @media (max-width: 860px) {
+    .bh-service-customer .right-box-service .service-customer-para{
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .bh-service-customer {
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+    .bh-service-customer .right-box-service .service-customer-title {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .bh-service-customer .left-box-service {
+        display: none;
+    }
+    .bh-service-customer .right-box-service {
+        width: 100%;
+        margin-left: unset;
+    }
+    .bh-service-customer .right-box-service .service-customer-title, 
+    .bh-service-customer .right-box-service .service-customer-para {
+        text-align: center;
+    }
+    .bh-service-customer .right-box-service .service-customer-btn {
+        margin:  0 auto;
+        width: 96px;
+        height: 40px;
+    }
+}
+/* End service-customer section */
+
+.bh-gradient-bg {
+    background-image: url(/imgs/bg-gradient-img.png);
+    width: 590px;
+    height: 1312px;
+    position: absolute;
+    right: 0;
+    bottom: 35%;
+    z-index: -1;
+}
+@media (max-width: 767px) {
+    .bh-gradient-bg {
+        display: none;
+    }
+}
+/* Start buy-sell section */
+.bh-buy-sell {
+    padding-bottom: 120px;
+}
+.bh-buy-sell .buy-sell-link {
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+.bh-buy-sell table {
+    background-color: var(--clr-box);
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    height: 448px;
+    border-radius: 25px;
+    border-collapse: collapse;
+}
+.bh-buy-sell table tr td:nth-child(3) {
+    text-align: right;
+}
+.bh-buy-sell table tr td:nth-child(1) {
+    width: 20%;
+}
+.bh-buy-sell table tr td:nth-child(3) {
+    width: 15%;
+}
+.bh-buy-sell table tr td:nth-child(5) {
+    width: 20%;
+}
+.bh-buy-sell table tr td:nth-child(2),
+.bh-buy-sell table tr td:nth-child(4) {
+    width: 10%;
+}
+.bh-buy-sell table tr td:nth-child(6) {
+    width: 15%;
+}
+.bh-buy-sell table tr td:nth-child(4),
+.bh-buy-sell table tr td:nth-child(5) {
+    text-align: center;
+}
+.bh-buy-sell table tr:not(:nth-child(5)) {
+    border-bottom: 1px solid var(--clr-border-color);
+}
+.bh-buy-sell table td {
+    padding: 5px 20px;
+}
+.bh-buy-sell table tr .trade-link {
+    color: var(--clr-primary);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.bh-buy-sell table tr td:nth-child(1),
+.bh-buy-sell table tr td:nth-child(2),
+.bh-buy-sell table tr td:nth-child(3),
+.bh-buy-sell table tr td:nth-child(4) {
+    font-family: var(--font-family);
+    font-weight: var(--fw-bold);
+}
+.bh-buy-sell table tr td:nth-child(6) {
+    font-weight: var(--fw-semibold);
+}
+.bh-buy-sell table tr td:nth-child(1),
+.bh-buy-sell table tr td:nth-child(3),
+.bh-buy-sell table tr td:nth-child(6) {
+    color: var(--clr-primary);
+}
+.bh-buy-sell table tr td:nth-child(2) {
+    color: var(--clr-link);
+}
+.bh-buy-sell table tr:not(:nth-child(4)) td:nth-child(4) {
+    color: var(--clr-green);
+}
+.bh-buy-sell table tr:nth-child(4) td:nth-child(4) {
+    color: var(--clr-red);
+}
+.bh-buy-sell table tr td:nth-child(1),
+.bh-buy-sell table tr td:nth-child(2),
+.bh-buy-sell table tr td:nth-child(3),
+.bh-buy-sell table tr td:nth-child(4) {
+    font-size: 15px;
+    line-height: 30px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .bh-buy-sell table td {
+        padding: 10px;
+    }
+    .bh-buy-sell table tr td:nth-child(1),
+    .bh-buy-sell table tr td:nth-child(3) {
+       width: 10%;
+    }
+    .bh-buy-sell table tr td:nth-child(2),
+    .bh-buy-sell table tr td:nth-child(4) {
+       width: 5%;
+    }
+    .bh-buy-sell table tr td:nth-child(5),
+    .bh-buy-sell table tr td:nth-child(6) {
+       width: 15%;
+    }
+    .bh-buy-sell table tr td:nth-child(1),
+    .bh-buy-sell table tr td:nth-child(2),
+    .bh-buy-sell table tr td:nth-child(3),
+    .bh-buy-sell table tr td:nth-child(4) {
+    font-size: 15px;
+    line-height: 16px;
+    }
+    .bh-buy-sell table tr td:nth-child(6) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .bh-buy-sell {
+        padding-bottom: 100px;
+    }
+    .bh-buy-sell table tr td {
+        display: block;
+        padding: 5px 20px;
+    }
+    .bh-buy-sell table tr td:first-child {
+        padding-top: 20px;
+    }
+    .bh-buy-sell table tr td:last-child {
+        padding-bottom: 20px;
+    }
+    .bh-buy-sell table tr td:nth-child(1),
+    .bh-buy-sell table tr td:nth-child(2),
+    .bh-buy-sell table tr td:nth-child(3),
+    .bh-buy-sell table tr td:nth-child(4),
+    .bh-buy-sell table tr td:nth-child(5),
+    .bh-buy-sell table tr td:nth-child(6) {
+        width: 100%;
+    }
+    .bh-buy-sell table tr td::before {
+        content: attr(data-cell) ": ";
+        margin-right: 10px;
+        text-transform: capitalize;
+        color: var(--clr-primary);
+        font-weight: var(--fw-bold);
+    }
+    .bh-buy-sell table tr td:nth-child(3),
+    .bh-buy-sell table tr td:nth-child(4),
+    .bh-buy-sell table tr td:nth-child(5) {
+        text-align: left;
+    }
+    .bh-buy-sell table tr td:nth-child(5),
+    .bh-buy-sell table tr td:nth-child(6) {
+        display: flex;
+        align-items: center;
+    }
+    .bh-buy-sell table tr td:nth-child(1),
+    .bh-buy-sell table tr td:nth-child(2),
+    .bh-buy-sell table tr td:nth-child(3),
+    .bh-buy-sell table tr td:nth-child(4),
+    .bh-buy-sell table tr td:nth-child(6) {
+        font-weight: var(--fw-base);
+   }
+} 
+/* End buy-sell section */
+
+/* Start first-step-background */ 
+.first-step-bg {
+    background: url(/imgs/left-bg.png);
+    width: 600px;
+    height: 1045px;
+    position: absolute;
+    bottom: 22%;
+    z-index: -1;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .first-step-bg {
+        opacity: 50%;
+    }
+}
+@media (max-width: 767px) {
+    .first-step-bg {
+        display: none;
+    }
+}
+/* End first-step-background */ 
+
+/* Start first-step-section */
+.bh-first-step {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.bh-first-step .left-box {
+    width: 50%;
+}
+.bh-first-step .left-box-title {
+    color: var(--clr-primary);
+    font-family: var(--font-family);
+    font-weight: var(--fw-black);
+    font-size: 40px;
+    line-height: 55px;
+}
+.bh-first-step .right-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 330px;
+    position: relative;
+}
+.bh-first-step .right-box .image-container {
+    width: 294px;
+    height: 298px;
+    background-image: url(/imgs/first-step-bg.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+.bh-first-step .right-box .first-step-small-star {
+    position: absolute;
+    right: 20%;
+    top: 0;
+}
+.bh-first-step .right-box .first-step-big-star {
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .bh-first-step {
+        padding-bottom: 60px;
+    }
+    .bh-first-step .left-box-title {
+    font-size: 25px;
+    line-height: 30px;
+   }
+}
+@media (max-width: 935px) {
+    .bh-first-step .left-box-para {
+        font-size: 10px;
+    }
+}
+@media (min-width: 936px) {
+    .bh-first-step .left-box-para {
+        font-size: 13px;
+    }
+}
+@media (max-width: 767px) {
+    .bh-first-step {
+        justify-content: center;
+    }
+    .bh-first-step .right-box {
+        display: none;
+    }
+    .bh-first-step .left-box {
+        width: 100%;
+    }
+    .bh-first-step .left-box-title {
+        font-size: 15px;
+        line-height: 20px;
+       }
+   .bh-first-step .left-box-title,
+   .bh-first-step .left-box-para {
+        text-align: center;
+    } 
+    .bh-first-step .first-step-btn {
+        margin:  0 auto;
+        width: 96px;
+        height: 40px;
+    }
+}
+/* End first-step-section */
+
+/* Start receive-transmissions-section */
+.receive-trans {
+    padding-bottom: 100px;
+}
+.receive-trans .receive-trans-title {
+    text-align: center;
+}
+.receive-trans .receive-trans-para {
+    text-align: center;
+}
+.receive-trans .form-container,
+footer .footer-list .footer-list-item .form-container {
+    width: 304px;
+    height: 56px;
+    border-radius: 10px;
+    color: var(--clr-secondary-text);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 20px;
+    background: var(--clr-box);
+}
+.receive-trans .form-container {
+    margin: 0 auto;
+} 
+.receive-trans .form-container::after ,
+footer .footer-list .footer-list-item .form-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -1px;
+    border-radius: inherit;
+    background-image: linear-gradient(to top right, rgba(147, 63, 254, 1) 0%, rgba(24, 200, 255, 1) 100%);
+  }
+.receive-trans .form-container .form-control,
+footer .footer-list .footer-list-item .form-container .form-control {
+    background: transparent;
+    border: none;
+    color: var(--clr-primary);
+    padding-left: 10px;
+}
+.receive-trans .form-container .form-control:focus,
+footer .footer-list .footer-list-item .form-container .form-control:focus {
+    outline: none;
+}
+.receive-trans .form-container .receive-form-btn,
+footer .footer-list .footer-list-item .form-container .list-item-btn {
+    background: none;
+    border: none;
+    padding-right: 10px;
+    cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .receive-trans .receive-trans-title {
+       font-size: 30px;
+       line-height: 50px;
+    }
+    .receive-trans .receive-trans-para {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .receive-trans .receive-trans-title {
+        font-size: 18px;
+        line-height: 30px;
+     }
+     .receive-trans .receive-trans-para {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .receive-trans .form-container,
+    footer .footer-list .footer-list-item .form-container {
+        width: 220px;
+        height: 45px;
+    }
+}
+/* End receive-transmissions-section */
+
+.circle-bg {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    opacity: 50%;
+    width: 100%;
+}
+/* Start footer */
+footer {
+    border-top: 1px solid var(--clr-box);
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    position: relative;
+}
+footer .footer-list {
+    width: 30%;
+}
+footer .footer-list:nth-child(2) {
+    text-align: center;
+}
+footer .footer-list:nth-child(3) {
+    text-align: right;
+}
+footer .footer-list .footer-list-item {
+    color: var(--clr-primary);
+    opacity: 30%;
+    font-family: var(--font-family);
+    font-weight: var(--fw-base);
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 25px;
+    white-space: nowrap;
+}
+footer .footer-list:nth-child(1) .footer-list-item:nth-child(2) {
+    opacity: 1;
+}
+.footer-bg-gradient  {
+    position: absolute;
+    bottom: 0;
+    left: -35%;
+    width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    footer .footer-list:nth-child(1) {
+        width: 40%;
+    }
+    footer .footer-list:nth-child(2) {
+        width: 20%;
+    }
+    footer .footer-list .footer-list-item .form-container {
+        width: 220px;
+        height: 45px;
+    }
+    footer .footer-list .footer-list-item {
+        font-size: 12px;
+    }
+}
+@media (max-width: 767px) {
+    footer {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    footer .footer-list {
+        padding-left: 30px;
+    }
+    footer .footer-list:nth-child(2),
+    footer .footer-list:nth-child(3) {
+        text-align: left;
+    }
+    .footer-bg-gradient  {
+        left: -10%;
+    }
+}
+@media (max-width: 500px) {
+    footer .footer-list .footer-list-item {
+        font-size: 12px;
+    } 
+} 
+/* End footer */
+

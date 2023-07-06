@@ -1,0 +1,136 @@
+.fq-input-logein{
+    width: 40%;
+    height: 500px;
+    margin: 250px 0 0 50%;
+    padding: 0px;
+    z-index: 1000 !important;
+}
+/* .fq-background-logein-images{
+    background-image: url('../imgs/Loge-in/light-color.png'), url('../imgs/Loge-in/landin.png');
+    position: absolute;
+    background-position: 0% 130% , 0% 100% ;
+    background-repeat: no-repeat, no-repeat;
+    width: 100%;
+    height: 719px;
+    z-index: 1;
+} */
+.fq-background-logein-images2 .image1{
+    position: absolute;
+    z-index: 9;
+    bottom: -209px;
+    left: 70px;
+}
+.fq-background-logein-images2 .image2{
+    position: absolute;
+    z-index: 10;
+    bottom: -209px;
+    left: 30px;
+}
+.fq-background-logein-images2 .image3{
+    position: absolute;
+    z-index: 10;
+    top: 220px;
+    left: 70px;
+}
+.fq-background-logein-images2 .image4{
+    position: absolute;
+    z-index: 10;
+    bottom: 70px;
+    left: 180px;
+}
+.fq-background-logein-images2 .image5{
+    position: absolute;
+    z-index: 10;
+    bottom: -209px;
+    left: 0px;
+    z-index: -10;
+}
+.fq-background-logein-images2 .image6{
+    position: absolute;
+    z-index: 10;
+    bottom: -209px;
+    left: 0px;
+    z-index: -5;
+}
+.fq-icon-name{
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 70px;
+}
+.fq-icon-name img{
+    margin-right: 20px;
+}
+.fq-login-input{
+    width: 90%;
+    margin-top: 25px;
+}
+.fq-login-input input{
+    width: 100%;
+    margin-top: 10px;
+    height: 50px;
+    background: rgba(22, 22, 30, 1);
+    border: none;
+    border-radius: 10px;
+}
+.fq-login-input h2{
+    font-size:18px;
+    font-family: var(--secondary-font-family);
+    font-weight:600;
+    color: rgba(255, 255, 255, 1);
+}
+.fq-check-fq{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size:18px;
+    font-family: var(--secondary-font-family);
+    font-weight: var(--fw-semibold);
+    color: rgba(137, 140, 169, 1);
+}
+.fq-fq-flex{
+    display: flex;
+    align-items: center;
+}
+.fq-check-fq input[type="checkbox"]{
+    margin-right: 10px;
+    border: 1px solid black;
+    /* background-color: transparent !important; */
+}
+.fq-input-logein button {
+    width: 20%;
+    height: 40px;
+    background-blend-mode: overlay;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.47) 12.55%, rgba(255, 255, 255, 0.546875) 42.51%, rgba(255, 255, 255, 0.39) 78.66%);
+    background: linear-gradient(225deg, var(--clr-blue-box) 14.89%, var(--clr-purble-box) 85.85%);
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: var(--secondary-font-family);
+    font-weight: var(--fw-semibold);
+}
+.fq-input-logein button a{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+@media(max-width:1350px){
+    .fq-input-logein{
+        width: 50%;
+    }
+}
+@media(max-width:1080px){
+    .fq-check-fq{
+        font-size:16px;
+    }
+}
+@media(max-width:944px){
+    .fq-input-logein{
+        width: 80%;
+        margin: 10%;
+        height: 680px;
+    }
+    .fq-background-logein-images2 .image1,.fq-background-logein-images2 .image2,.fq-background-logein-images2 .image3,.fq-background-logein-images2 .image4,.fq-background-logein-images2 .image6{
+        display: none;
+    }
+}

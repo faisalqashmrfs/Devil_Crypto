@@ -1,0 +1,154 @@
+.bh-signup {
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+.bh-signup .left-box-signup  {
+    width: 40%;
+    position: relative;
+}
+.bh-signup .right-box-signup {
+    width: 60%;
+}
+.bh-signup .left-box-signup .left-bottom-bg {
+    width: 453px;
+    height: 314px;
+    position: absolute;
+    bottom: 0;
+}
+.bh-signup .left-box-signup .hosting-bg {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+}
+.bh-signup .left-box-signup .bubble-bg {
+    width: 374px;
+    height: 609px;
+    position: absolute;
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+}
+.bh-signup .left-box-signup .item1-bg{
+    position: absolute;
+    top: 26%;
+    left: 23%;
+}
+.bh-signup .left-box-signup .item2-bg {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    left: 45%;
+    top: 50%;
+}
+.bh-signup .left-box-signup .shadow-bg {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+.bh-signup .right-box-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bh-signup .right-box-signup .content-container {
+    width: fit-content;
+    margin: 0 auto;
+}
+.bh-signup .right-box-signup .title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.bh-signup .right-box-signup .title-container .signup-logo {
+    width: 54px;
+    height: 53px;
+    margin-right: 10px;
+}
+.bh-signup .right-box-signup .title-container .signup-title {
+    font-family: var(--secondary-font-family);
+    font-weight: var(--mont-semibold);
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--clr-primary);
+}
+.bh-signup .right-box-signup form label {
+    color: var(--clr-primary);
+    margin-bottom: 15px;
+    font-family: var(--secondary-font-family);
+    font-size: 18px;
+    font-weight: var(--mont-semibold);
+}
+.bh-signup .right-box-signup form .input-box {
+    display: flex;
+    flex-direction: column;
+}
+.bh-signup .right-box-signup form .input-box:not(:nth-child(4)) {
+    margin-bottom: 15px;
+}
+.bh-signup .right-box-signup form .input-box:nth-child(4) {
+    margin-bottom: 35px;
+}
+.bh-signup .right-box-signup form .input-box input {
+    background: var(--clr-secondary-box);
+    color: var(--clr-primary);
+    border: transparent;
+    border-radius: 10px;
+    width: 450px;
+    height: 45px;
+}
+.bh-signup .right-box-signup form .input-box input:focus {
+    outline: none;
+    padding: 10px;
+}
+.bh-signup .right-box-signup form .signup-btn {
+    width: 96px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: linear-gradient(to top right, var(--clr-purble-box) 0%, var(--clr-blue-box) 100%);
+    color: var(--clr-primary);
+    font-family: var(--font-family);
+    font-weight: var(--fw-semibold);
+    text-decoration: none;
+}
+.bh-signup .right-box-signup form .signup-btn a{
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+.bh-signup .shadow-bg-tablet {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    display: none;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .bh-signup .right-box-signup {
+        position: relative;
+    }
+}
+@media (min-width: 768px) and (max-width: 948px) {
+    .bh-signup .left-box-signup {
+        left: -10%;
+    }
+}
+@media (max-width: 768px) {
+    .bh-signup .left-box-signup {
+        display: none;
+    }
+    .bh-signup .right-box-signup {
+        width: 100%;
+    }
+    .bh-signup .shadow-bg-tablet {
+        display: block;
+    }
+}
+@media  (max-width: 600px) {
+.bh-signup .right-box-signup form .input-box input {
+        width: 300px;
+    }
+.bh-signup .right-box-signup .title-container .signup-title {
+    font-size: 26px;
+}
+}

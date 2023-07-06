@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Devil Crypto</title>
+        <link rel="shortcut icon" href="Luxi-Hosting-Logo.svg" type="Luxi-Hosting-Logo-icon" />
+
+        <!-- start styles -->
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="./css/Dashboard-style.css" />
+        <link rel="stylesheet" href="./css/Deposits-style.css" />
+        <link rel="stylesheet" href="./css/WithDraw-style.css" />
+        <link rel="stylesheet" href="./css/Buy-Miner-style.css"/>
+        <link rel="stylesheet" href="./css/fq-Profile-style.css"/>
+        
+        <!-- end styles -->
+
+    </head>
+    <body>
+        <!-- backgrounds -->
+        <div class="fq-background-images" ></div>
+        <!-- backgrounds -->
+
+        <section>
+            <div class="fq-nav" >
+                <div class="crypto12" >
+                    <img class="crypto" src="./Luxi-Hosting-Logo.svg" alt="Crypto">
+                    <a href="#">Crypto</a>
+                </div>
+                <div class="evano" >
+                    <a href="#">Evano</a>
+                    <img class="crypto1" src="./imgs/control-icon/Ellipse 1.png" alt="Ellipse 1.png">
+                </div>
+            </div>
+        </section>
+        
+        <section class="containerThe-all" >
+            
+            
+            <!--start controlbutton-section-->
+            <section class="fq-conrolpanel" >
+                <div class="fq-control-option" >
+                    <div>
+                        
+                        <button 
+                            class="fq-button" 
+                            onclick="showSection(1)">
+                            <img src="./imgs/control-icon/dasboard.png" alt="dasboard.png">
+                            Dashboard
+                        </button>
+                    </div>
+                    <div>
+                        <button 
+                        class="fq-button" 
+                        onclick="showSection(2)">
+                        <img src="./imgs/control-icon/WithDraw.png" alt="WithDraw.png">
+                            WithDraw
+                        </button>
+                    </div>
+                    <div>
+                        <button 
+                        class="fq-button" 
+                        onclick="showSection(3)">
+                        <img src="./imgs/control-icon/Deposits.png" alt="Deposits.png">
+                            Deposits
+                        </button>
+                    </div>
+                    <div>
+                        <button 
+                        class="fq-button" 
+                        onclick="showSection(4)">
+                        <img src="./imgs/control-icon/Buy-Miner.png" alt="Buy-Miner.png">
+                            Buy-Miner
+                        </button>
+                    </div>
+                    <div>
+                        <button  
+                        class="fq-button"
+                        onclick="showSection(5)">
+                        <img src="./imgs/control-icon/setting.png" alt="setting.png">
+                            Settings
+                        </button>
+                    </div>
+                    <div>
+                        <button 
+                        class="fq-button" 
+                        onclick="showSection(6)">
+                        <img src="./imgs/control-icon/profile.png" alt="setting.png">
+                        Profile
+                        </button>
+                    </div>
+                    <div>
+                        <button 
+                        class="fq-button log-out" 
+                        onclick="showSection()">
+                        <img src="./imgs/control-icon/logout.png" alt="setting.png">
+                            <a href="./logeIn.html">loge-out</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- end controlbutton-section -->
+
+            <!--start Dashboard-section-->
+            <section class="fq-Dashboard-user fq-section " id="section1" >
+                <div class="fq-flow1" >
+                    <div class="fq-nav-prices" >
+                        <div class="fq-total-assets" >
+                            <div class="fq-head-description" >
+                                <img src="./imgs/control-icon/Total-assets.png" alt="Total-assets.png">
+                            </div>
+                            <div class="fq-body-description" >
+                                <span class="fq-total" >Total assets</span>
+                                <h2>$ 87.743</h2>
+                            </div>
+                        </div>
+                        <div class="fq-total-deposits" >
+                            <div class="fq-head-description" >
+                                <img src="./imgs/control-icon/Total-assets.png" alt="Total-assets.png">
+                            </div>
+                            <div class="fq-body-description" >
+                                <span class="fq-total" >Total assets</span>
+                                <h2>$ 78.342</h2>
+                            </div>
+                        </div>
+                        <div class="fq-apy" >
+                            <div class="fq-head-description" >
+                                <img src="./imgs/control-icon/APY.png" alt="APY.png">
+                            </div>
+                            <div class="fq-body-description" >
+                                <span class="fq-total" >Total assets</span>
+                                <h2>+ 12.3%</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="droplist">
+                        <div>
+                            <select id="dropdown" class="">
+                                <option class="fq-option" value="option1">
+                                <img src="./imgs/control-icon/betcoin.png" alt="Image 1"> Bitcoin
+                                </option>
+                                <option class="fq-option" value="option2">
+                                <img src="./imgs/control-icon/Ethereum.png" alt="Image 2"> Ethereum
+                                </option>
+                                <option class="fq-option" value="option3">
+                                <img src="./imgs/control-icon/Shiba.png" alt="Image 3"> Shiba
+                                </option>
+                                <option class="fq-option" value="option4">
+                                <img src="./imgs/control-icon/Solona.png" alt="Image 4"> Solona
+                                </option>
+                                <option class="fq-option" value="option5">
+                                <img src=".//imgs/control-icon/Tether.png" alt="Image 5"> Tether
+                                </option>
+                            </select>
+                        </div>
+                        <div class="fq-space">
+                            <h3>
+                                $ 78,342
+                            </h3>
+                        </div>
+                    </div>
+                    <canvas class="fq-chart" id="myChart"></canvas>
+                </div>
+                <div class="fq-pricess">
+                    <h2>Assets</h2>
+                    <div class="fq-assets-oneitem" >
+                        <div class="fq-headtake" >
+                            <div class="fq-fq-fq">
+                                <img src="./imgs/control-icon/betcoin.png" alt="betcoin.png">
+                                <p>Bitcoin</p>
+                            </div>
+                            <span>$ 23,3B</span>
+                        </div>
+                        <div class="fq-takerouf">
+                            <div class="fq-take-container">
+                                <div class="fq-take-contant"></div>
+                            </div>
+                            <span>71,68%</span>
+                        </div>
+                    </div>
+                    <div class="fq-assets-oneitem" >
+                        <div class="fq-headtake" >
+                            <div class="fq-fq-fq">
+                                <img src="./imgs/control-icon/Ethereum.png" alt="Ethereum.png">
+                                <p>Ethereum</p>
+                            </div>
+                            <span>$ 23,3B</span>
+                        </div>
+                        <div class="fq-takerouf">
+                            <div class="fq-take-container">
+                                <div class="fq-take-contant1"></div>
+                            </div>
+                            <span>71,68%</span>
+                        </div>
+                    </div>
+                    <div class="fq-assets-oneitem" >
+                        <div class="fq-headtake" >
+                            <div class="fq-fq-fq">
+                                <img src="./imgs/control-icon/Shiba.png" alt="Shiba.png">
+                                <p>Shiba</p>
+                            </div>
+                            <span>$ 23,3B</span>
+                        </div>
+                        <div class="fq-takerouf">
+                            <div class="fq-take-container">
+                                <div class="fq-take-contant2"></div>
+                            </div>
+                            <span>71,68%</span>
+                        </div>
+                    </div>
+                    <div class="fq-assets-oneitem" >
+                        <div class="fq-headtake" >
+                            <div class="fq-fq-fq">
+                                <img src="./imgs/control-icon/Solona.png" alt="Solona.png">
+                                <p>Solona</p>
+                            </div>
+                            <span>$ 23,3B</span>
+                        </div>
+                        <div class="fq-takerouf">
+                            <div class="fq-take-container">
+                                <div class="fq-take-contant3"></div>
+                            </div>
+                            <span>71,68%</span>
+                        </div>
+                    </div>
+                    <div class="fq-assets-oneitem" >
+                        <div class="fq-headtake" >
+                            <div class="fq-fq-fq">
+                                <img src="./imgs/control-icon/Solona.png" alt="Solona.png">
+                                <p>Tether</p>
+                            </div>
+                            <span>$ 23,3B</span>
+                        </div>
+                        <div class="fq-takerouf">
+                            <div class="fq-take-container">
+                                <div class="fq-take-contant4"></div>
+                            </div>
+                            <span>71,68%</span>
+                        </div>
+                    </div>
+                    <button class="fq-prices-btn" >View All</button>
+                </div>
+                <div class="fq-tokens">
+                    <h1>TOKEN</h1>
+                    <table>
+                        <thead>
+                          <tr class="fq-th-width25">
+                            <th class="fq-th-width25">Name</th>
+                            <th class="fq-th-width25">Balance</th>
+                            <th class="fq-th-width25">Profile</th>
+                            <th class="fq-th-width25">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="fq-th-color">Bitcoin</td>
+                            <td class="fq-th-color">1</td>
+                            <td class="fq-th-color">0.003 BTC</td>
+                            <td class="fq-th-color"><button class="fq-th-btn">Add</button></td>
+                          </tr>
+                          <tr>
+                            <td class="fq-th-color">Ethereum</td>
+                            <td class="fq-th-color">2</td>
+                            <td class="fq-th-color">0.005 ETH</td>
+                            <td class="fq-th-color"><button class="fq-th-btn">Add</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <div class="fq-jouin animated-border">
+                    <img src="./imgs/Group.png" alt="Group.png">
+                    <div>
+                        <h2>Join Our Community</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button>Join Now</button>
+                    </div>
+                </div>
+            </section>
+            <!-- end Dashboard-section -->
+
+            <!--start WithDraw-section-->
+            <section class="fq-WithDraw fq-section " id="section2" >
+                <div class="dropdown">
+                    <button 
+                        onclick="toggleDropdown()" 
+                        class="dropbtn">
+                            <div id="dropbtn-text">
+                                <div class="drpbtn-contant" >
+                                    <img src="./imgs/control-icon/betcoin.png" alt="betcoin.png">
+                                    <span>BTC</span>
+                                </div>
+                                <div class="drpbtn-contant2" >
+                                    <span>0.00000000</span>
+                                    <img src="./imgs/Vector.png" alt="">
+                                </div>
+                            </div>
+                    </button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <button onclick="selectOption('BTC')">
+                            <div class="drpbtn-contant" >
+                                <img src="./imgs/control-icon/betcoin.png" alt="betcoin.png">
+                                <span>BTC</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="fq-toggle-id" >
+                    <div id="text1">
+                        <p >FAUCETPAY (LESS FEES)</p>
+                    </div>
+                    <div class="fq-toggle-btn">
+                        <button id="toggleButton" onclick="toggle()">Off</button>
+                    </div>
+                    <div id="text2">
+                        <p>DIRECT WITHDRAWAL</p>
+                    </div>
+                </div>
+                <div class="fq-input" >
+                    <input type="text" placeholder="With drawal Address">
+                </div>
+                <div class="fq-input-2btn">
+                    <input class="fq-unput-2btn-input" type="text" placeholder="with drawal amount">
+                    <button class="fq-btn1">ALL</button>
+                    <button class="fq-btn2">MIN</button>
+                </div>
+                <div class="fq-text2div">
+                    <div>
+                        Fee: 0.003 BTC
+                    </div>
+                    <div>
+                        you receive: 0.017 BTC
+                    </div>
+                </div>
+                <div class="fq-text-btn">
+                    <button>
+                        PLEACE WHITDRAWAL
+                    </button>
+                </div>
+            </section>
+            <!-- end WithDraw-section -->
+
+            <!--start Deposits-section-->
+            <section class="fq-Deposits fq-section " id="section3" >
+                <div id="" >
+                    <div class="dropdown">
+                        <button 
+                            onclick="toggleDropdown()" 
+                            class="dropbtn">
+                                <div id="dropbtn-text">
+                                    <div class="drpbtn-contant" >
+                                        <img src="./imgs/control-icon/betcoin.png" alt="betcoin.png">
+                                        <span>BTC</span>
+                                    </div>
+                                    <div class="drpbtn-contant2" >
+                                        <span>0.00000000</span>
+                                        <img src="./imgs/Vector.png" alt="">
+                                    </div>
+                                </div>
+                        </button>
+                        <div id="myDropdown1" class="dropdown-content">
+                            <button onclick="selectOption('BTC')">
+                                <div class="drpbtn-contant" >
+                                    <img src="./imgs/control-icon/betcoin.png" alt="betcoin.png">
+                                    <span>BTC</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="qrcode"></div>
+                    <div class="fq-inpot-coby">
+                        <input type="text" value="283h976qwe9ry25r817gf31f4fk17f9g " id="myInput">
+                        <button onclick="myFunction()"><img src="./imgs/coby.png" alt="coby.png"></button>
+                    </div>
+                </div>
+                <div class="fq-text-dec">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>eiusmod temposLorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempo</p>
+                </div>
+                <div class="fq-text-btn">
+                    <button>
+                        PLEACE WHITDRAWAL
+                    </button>
+                </div>
+            </section>
+            <!-- end Deposits-section -->
+
+            <!--start Buy-Miner-section-->
+            <section class="fq-Buy-Miner fq-section " id="section4" >
+                <div class="fq-card6time">
+                    <div class="fq-rebited6time">
+                        <div class="fq-imgandspan" >
+                            <div class="vsimg"></div>
+                            <img src="./imgs/Server.png" alt="">
+                            <div class="fq-span-h1" >
+                                <span>Bronze</span>
+                                <h1>X0.5</h1>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempos</p>
+                        <button>Buy Now</button>
+                    </div>
+                    <div class="fq-rebited6time">
+                        <div class="fq-imgandspan" >
+                            <div class="vsimg"></div>
+                            <img src="./imgs/Server.png" alt="">
+                            <div class="fq-span-h1" >
+                                <span>Bronze</span>
+                                <h1>X0.5</h1>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempos</p>
+                        <button>Buy Now</button>
+                    </div>
+                    <div class="fq-rebited6time">
+                        <div class="fq-imgandspan" >
+                            <div class="vsimg"></div>
+                            <img src="./imgs/Server.png" alt="">
+                            <div class="fq-span-h1" >
+                                <span>Bronze</span>
+                                <h1>X0.5</h1>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempos</p>
+                        <button>Buy Now</button>
+                    </div>
+                    <div class="fq-rebited6time">
+                        <div class="fq-imgandspan" >
+                            <div class="vsimg"></div>
+                            <img src="./imgs/Server.png" alt="">
+                            <div class="fq-span-h1" >
+                                <span>Bronze</span>
+                                <h1>X0.5</h1>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempos</p>
+                        <button>Buy Now</button>
+                    </div>
+                    <div class="fq-rebited6time">
+                        <div class="fq-imgandspan" >
+                            <div class="vsimg"></div>
+                            <img src="./imgs/Server.png" alt="">
+                            <div class="fq-span-h1" >
+                                <span>Bronze</span>
+                                <h1>X0.5</h1>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempos</p>
+                        <button>Buy Now</button>
+                    </div>
+                    <div class="fq-rebited6time">
+                        <div class="fq-imgandspan" >
+                            <div class="vsimg"></div>
+                            <img src="./imgs/Server.png" alt="">
+                            <div class="fq-span-h1" >
+                                <span>Bronze</span>
+                                <h1>X0.5</h1>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempos</p>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </section>
+            <!-- end Buy-Miner-section -->
+
+            <!--start Settings-section-->
+            <section class="fq-Settings fq-section " id="section5" >
+            </section>
+            <!-- end Settings-section -->
+
+            <!-- start Profile-section -->
+            <section class="fq-Profile fq-section " id="section6" >
+                <div class="fq-form-father">
+                    <div class="fq-navform" >
+                        <img src="./imgs/control-icon/Ellipse 1.png" alt="Ellipse-photo">
+                        <h1>Evano</h1>
+                    </div>
+                    <div class="fq-item-oneinput">
+                        <h3>Email</h3>
+                        <input type="text">
+                    </div>
+                    <div class="fq-item-oneinput">
+                        <h3>Password</h3>
+                        <input type="text">
+                    </div>
+                    <div class="fq-item-oneinput">
+                        <h3>BTC Address</h3>
+                        <input type="text">
+                    </div>
+                    <div class="fq-item-oneinput">
+                        <h3>ETH Address</h3>
+                        <input type="text">
+                    </div>
+                    <button class="fq-input-btn" >Save</button>
+                </div>
+            </section>
+            <!-- end Profile-section -->
+        </section>
+
+        <!-- start js -->
+        <script src="./js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+        <script src="./js/Dashboard-script.js"></script>
+        <script src="./js/Deposits-script.js"></script>
+        <script src="./js/WithDraw-script.js"></script>
+        <script src="./js/Buy-Miner-script.js"></script>
+        <script src="./js/fq-Profile-script.js"></script>
+        <!-- end js -->
+    </body>
+</html>
